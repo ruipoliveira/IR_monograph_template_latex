@@ -1,0 +1,79 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel} % If you write in portuguese
+%\usepackage[english]{babel} % If you write in English
+\usepackage{lipsum}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{a4wide}
+\usepackage{mathptmx} % times new roman 
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%
+%%% to fill out %%
+%%%%%%%%%%%%%%%%%%
+
+\def \course {MIECT} % or MEI
+
+\def \title {Inserir aqui o titulo}
+
+\def \author {Inserir aqui o nome do autor}
+
+%%%%%%%%%%%%%%%%%%
+%%% First page %%%
+%%%%%%%%%%%%%%%%%%
+
+% Turn on the style
+\pagestyle{fancy}
+% Clear 
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Set the right side of the footer to be the page number
+\fancyfoot[R]{\thepage}
+
+\begin{titlepage}
+\begin{center}
+
+\textbf{\fontsize{16}{16}\selectfont Universidade de Aveiro}\\[0.5cm]
+
+\textbf{\fontsize{16}{16}\selectfont Departamento de Electrónica, Telecomunicações e Informática}\\[0.5cm]
+
+\textbf{\fontsize{16}{16}\selectfont \course}\\[3.5cm]
+
+\textbf{\fontsize{18}{18}\selectfont \title}\\[4.5cm]
+
+\textbf{\fontsize{18}{18}\selectfont \author}\\[0.5cm]
+
+\textbf{\fontsize{18}{18}\selectfont \today}\\[0.5cm]
+
+\vfill
+
+\fontsize{14}{14}\selectfont Trabalho realizado no âmbito da disciplina \\
+\textbf{\fontsize{16}{16}\selectfont Recuperação de Informação}
+
+\end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% All pages %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\contentsname}{Índice}
+
+\tableofcontents
+
+\newpage
+
+\include{resumo}
+
+\include{desenvolvimento}
+
+\include{conclusoes}
+
+\include{referencias}
+
+\end{document}
