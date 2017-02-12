@@ -4,7 +4,7 @@ Template in latex for monography writing of the class of Information Retrieval -
 ## Resources
 
 * Source files in latex inside the folder ```IR_monograph_template_latex``` (.tex)
-* Souce files in latex inside the ZIP file. Suggestion: use sharelatex online editor by uploading this file
+* Souce files in latex inside the ZIP file. Suggestion: use [sharelatex](https://sharelatex.com) /[overleaf](https://www.overleaf.com) online editor by uploading this file
 * Result obtained after compilation of source code (.pdf)
 
 
